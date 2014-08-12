@@ -1,11 +1,12 @@
 #include <iostream>
+#include "InputManager.h"
 
 int main()
 {
-	char choice[50];
+    InputManager manager;
 	std::cout << "Entrez votre choix :" << std::endl;
-	std::cin >> choice;
-	std::cout << "Votre choix est donc : " << choice << std::endl;
+	manager.update();
+	std::cout << "Votre choix est donc : " << manager.getInput() << std::endl;
 
 	return EXIT_SUCCESS;
 }

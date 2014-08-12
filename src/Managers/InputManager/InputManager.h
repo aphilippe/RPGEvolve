@@ -11,4 +11,14 @@
 
 #include <iostream>
 
+class InputManager
+{
+private:
+    char _currentInput[25];
+    
+public:
+    void update();
+    char* getInput();
+};
+
 #endif /* defined(__RPGEvolve__InputManager__) */

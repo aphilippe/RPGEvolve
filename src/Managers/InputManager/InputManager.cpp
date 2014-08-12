@@ -7,3 +7,14 @@
 //
 
 #include "InputManager.h"
+#include <iostream>
+
+void InputManager::update()
+{
+    std::cin >> this->_currentInput;
+}
+
+char* InputManager::getInput()
+{
+    return this->_currentInput;
+}
