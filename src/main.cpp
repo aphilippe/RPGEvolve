@@ -1,12 +1,12 @@
 #include <iostream>
-#include "InputManager.h"
+#include "Game/Game.h"
 
 int main()
 {
-    InputManager manager;
-	std::cout << "Entrez votre choix :" << std::endl;
-	manager.update();
-	std::cout << "Votre choix est donc : " << manager.getInput() << std::endl;
+    Game game;
+    
+    game.init();
+    game.start();
 
 	return EXIT_SUCCESS;
 }

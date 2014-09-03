@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B797145B19B7347E001D6899 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B797145919B7347E001D6899 /* Game.cpp */; };
 		B7A86DEC1992483D002F545A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7A86DEB1992483D002F545A /* main.cpp */; };
 		B7CCFD4D199A3531003AB9F3 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7CCFD4B199A3531003AB9F3 /* InputManager.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B797145919B7347E001D6899 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		B797145A19B7347E001D6899 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		B7A86DDC199247A0002F545A /* RPGEvolve */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RPGEvolve; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A86DEB1992483D002F545A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B7CCFD4B199A3531003AB9F3 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
@@ -41,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B797145819B73471001D6899 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				B797145919B7347E001D6899 /* Game.cpp */,
+				B797145A19B7347E001D6899 /* Game.h */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		B7A86DD3199247A0002F545A = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +72,7 @@
 		B7A86DEA1992483D002F545A /* src */ = {
 			isa = PBXGroup;
 			children = (
+				B797145819B73471001D6899 /* Game */,
 				B7CCFD49199A3513003AB9F3 /* Managers */,
 				B7A86DEB1992483D002F545A /* main.cpp */,
 			);
@@ -135,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B797145B19B7347E001D6899 /* Game.cpp in Sources */,
 				B7CCFD4D199A3531003AB9F3 /* InputManager.cpp in Sources */,
 				B7A86DEC1992483D002F545A /* main.cpp in Sources */,
 			);
