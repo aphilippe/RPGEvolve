@@ -1,5 +1,5 @@
 #include <iostream>
-#include "InputManager.h"
+#include "Managers/InputManager/InputManager.h"
 
 int main()
 {
