@@ -9,10 +9,12 @@
 #include "Game.h"
 #include "../Managers/InputManager/InputManager.h"
 
+Game* Game::current = nullptr;
+
 void
 Game::init()
 {
-    
+	Game::current = this;
 }
 
 void

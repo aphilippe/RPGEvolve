@@ -65,7 +65,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\Game\Component\Component.cpp" />
+    <ClCompile Include="..\..\..\..\src\Game\Entity\Entity.cpp" />
+    <ClCompile Include="..\..\..\..\src\Game\Game.cpp" />
+    <ClCompile Include="..\..\..\..\src\Game\Scene\Scene.cpp" />
     <ClCompile Include="..\..\..\..\src\main.cpp" />
+    <ClCompile Include="..\..\..\..\src\Managers\InputManager\InputManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\Managers\SceneManager\SceneManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\Game\Component\Component.h" />
+    <ClInclude Include="..\..\..\..\src\Game\Entity\Entity.h" />
+    <ClInclude Include="..\..\..\..\src\Game\Game.h" />
+    <ClInclude Include="..\..\..\..\src\Game\Scene\Scene.h" />
+    <ClInclude Include="..\..\..\..\src\Managers\InputManager\InputManager.h" />
+    <ClInclude Include="..\..\..\..\src\Managers\SceneManager\SceneManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

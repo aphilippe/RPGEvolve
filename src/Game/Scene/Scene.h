@@ -10,12 +10,19 @@
 #define __RPGEvolve__Scene__
 
 #include <iostream>
+#include "../Entity/Entity.h"
 
 class Scene
 {
-    
+private:
+
 public:
     
+	void start();
+	void init();
+	void update();
+	void stop();
+
 };
 
 #endif /* defined(__RPGEvolve__Scene__) */

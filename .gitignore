@@ -40,6 +40,7 @@ Thumbs.db
 #######################
 *.suo
 *.sdf
+*.opensdf
 platforms/MacOs/XCode/RPGEvolve/RPGEvolve.xcodeproj/project.xcworkspace/xcuserdata/
 platforms/MacOs/XCode/RPGEvolve/RPGEvolve.xcodeproj/xcuserdata/
 

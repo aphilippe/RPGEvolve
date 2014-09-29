@@ -7,3 +7,27 @@
 //
 
 #include "Scene.h"
+
+void
+Scene::init()
+{
+
+}
+
+void 
+Scene::start()
+{
+
+}
+
+void
+Scene::update()
+{
+
+}
+
+void
+Scene::stop()
+{
+
+}

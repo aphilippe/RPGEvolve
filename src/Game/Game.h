@@ -21,6 +21,8 @@ public:
     void start();
     void stop();
     void update();
+
+	static Game* current;
 };
 
 #endif /* defined(__RPGEvolve__Game__) */
