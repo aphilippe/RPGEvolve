@@ -10,17 +10,24 @@
 #define __RPGEvolve__Game__
 
 #include <iostream>
+#include "../Managers/InputManager/InputManager.h"
+#include "../Managers/SceneManager/SceneManager.h"
 
 class Game {
     
 private:
     bool _living;
+    InputManager _inputManager;
+    SceneManager _sceneManager;
     
 public:
     void init();
     void start();
     void stop();
     void update();
+    
+    InputManager& inputManager();
+    SceneManager& sceneManager();
 
 	static Game* current;
 };

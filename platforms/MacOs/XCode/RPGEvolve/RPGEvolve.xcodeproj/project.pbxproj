@@ -15,6 +15,7 @@
 		B7D2D58119E40B38008C2A4C /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D57419E40AA9008C2A4C /* Scene.cpp */; };
 		B7D2D58219E40B3C008C2A4C /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D57819E40AA9008C2A4C /* InputManager.cpp */; };
 		B7D2D58319E40B3E008C2A4C /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D57B19E40AA9008C2A4C /* SceneManager.cpp */; };
+		B7D2D58819E40BF6008C2A4C /* StartMenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D58619E40BF6008C2A4C /* StartMenuScene.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		B7D2D57919E40AA9008C2A4C /* InputManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
 		B7D2D57B19E40AA9008C2A4C /* SceneManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
 		B7D2D57C19E40AA9008C2A4C /* SceneManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneManager.h; sourceTree = "<group>"; };
+		B7D2D58619E40BF6008C2A4C /* StartMenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StartMenuScene.cpp; sourceTree = "<group>"; };
+		B7D2D58719E40BF6008C2A4C /* StartMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartMenuScene.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				B7D2D56619E40AA9008C2A4C /* Engine */,
+				B7D2D58419E40BC5008C2A4C /* Game */,
 			);
 			name = src;
 			path = ../../../../src;
@@ -109,9 +113,9 @@
 			children = (
 				B7D2D56B19E40AA9008C2A4C /* Component */,
 				B7D2D56E19E40AA9008C2A4C /* Entity */,
+				B7D2D57319E40AA9008C2A4C /* Scene */,
 				B7D2D57119E40AA9008C2A4C /* Game.cpp */,
 				B7D2D57219E40AA9008C2A4C /* Game.h */,
-				B7D2D57319E40AA9008C2A4C /* Scene */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -168,6 +172,23 @@
 				B7D2D57C19E40AA9008C2A4C /* SceneManager.h */,
 			);
 			path = SceneManager;
+			sourceTree = "<group>";
+		};
+		B7D2D58419E40BC5008C2A4C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				B7D2D58519E40BD4008C2A4C /* Scenes */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		B7D2D58519E40BD4008C2A4C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B7D2D58619E40BF6008C2A4C /* StartMenuScene.cpp */,
+				B7D2D58719E40BF6008C2A4C /* StartMenuScene.h */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +250,7 @@
 				B7D2D57F19E40B32008C2A4C /* Entity.cpp in Sources */,
 				B7D2D58319E40B3E008C2A4C /* SceneManager.cpp in Sources */,
 				B7D2D58019E40B35008C2A4C /* Component.cpp in Sources */,
+				B7D2D58819E40BF6008C2A4C /* StartMenuScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

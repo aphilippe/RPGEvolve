@@ -46,3 +46,15 @@ Game::update()
         }
     }
 }
+
+InputManager&
+Game::inputManager()
+{
+    return _inputManager;
+}
+
+SceneManager&
+Game::sceneManager()
+{
+    return _sceneManager;
+}
