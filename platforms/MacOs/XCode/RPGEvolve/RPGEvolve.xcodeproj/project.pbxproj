@@ -31,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B70CEE3D19EE964400021D2F /* GenericFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericFactory.h; sourceTree = "<group>"; };
 		B7A86DDC199247A0002F545A /* RPGEvolve */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RPGEvolve; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A86DEB1992483D002F545A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../../src/main.cpp; sourceTree = "<group>"; };
 		B7D2D56819E40AA9008C2A4C /* SceneFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneFactory.cpp; sourceTree = "<group>"; };
@@ -62,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B70CEE3C19EE964400021D2F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B70CEE3D19EE964400021D2F /* GenericFactory.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		B7A86DD3199247A0002F545A = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +101,7 @@
 		B7D2D56619E40AA9008C2A4C /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				B70CEE3C19EE964400021D2F /* Utils */,
 				B7D2D56719E40AA9008C2A4C /* Factories */,
 				B7D2D56A19E40AA9008C2A4C /* Game */,
 				B7D2D57619E40AA9008C2A4C /* Managers */,
@@ -330,6 +340,8 @@
 		B7A86DE6199247A0002F545A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -337,6 +349,8 @@
 		B7A86DE7199247A0002F545A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

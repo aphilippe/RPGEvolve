@@ -7,3 +7,8 @@
 //
 
 #include "StartMenuScene.h"
+
+StartMenuScene::StartMenuScene() : Scene()
+{
+    printf("plop");
+}

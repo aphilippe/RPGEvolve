@@ -12,11 +12,11 @@
 #include <stdio.h>
 #include "Scene.h"
 
-class StartMenuScene : Scene {
+class StartMenuScene : public Scene {
     
     
 public:
-    
+    StartMenuScene();
 };
 
 #endif /* defined(__RPGEvolve__StartMenuScene__) */

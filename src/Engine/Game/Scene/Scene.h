@@ -17,7 +17,6 @@ class Scene
 private:
 
 public:
-    
 	void start();
 	void init();
 	void update();
