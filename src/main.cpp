@@ -6,17 +6,13 @@
 
 #include "StartMenuScene.h"
 
+
 using namespace engine::utils;
 
 int main()
-{
-    
-    GenericFactory<Scene, int> factory;
-    factory.registerObject<StartMenuScene>(1);
-    factory.createObject(1);
-    
+{    
     Game game;
-    
+    game.sceneManager().registerScene<StartMenuScene>(1);
     game.init();
     game.start();
 

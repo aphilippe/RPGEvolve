@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B7A86DEC1992483D002F545A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7A86DEB1992483D002F545A /* main.cpp */; };
-		B7D2D57D19E40B2A008C2A4C /* SceneFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D56819E40AA9008C2A4C /* SceneFactory.cpp */; };
 		B7D2D57E19E40B2E008C2A4C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D57119E40AA9008C2A4C /* Game.cpp */; };
 		B7D2D57F19E40B32008C2A4C /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D56F19E40AA9008C2A4C /* Entity.cpp */; };
 		B7D2D58019E40B35008C2A4C /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D56C19E40AA9008C2A4C /* Component.cpp */; };
@@ -34,8 +33,6 @@
 		B70CEE3D19EE964400021D2F /* GenericFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericFactory.h; sourceTree = "<group>"; };
 		B7A86DDC199247A0002F545A /* RPGEvolve */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RPGEvolve; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A86DEB1992483D002F545A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../../src/main.cpp; sourceTree = "<group>"; };
-		B7D2D56819E40AA9008C2A4C /* SceneFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneFactory.cpp; sourceTree = "<group>"; };
-		B7D2D56919E40AA9008C2A4C /* SceneFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneFactory.h; sourceTree = "<group>"; };
 		B7D2D56C19E40AA9008C2A4C /* Component.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
 		B7D2D56D19E40AA9008C2A4C /* Component.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
 		B7D2D56F19E40AA9008C2A4C /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
@@ -102,20 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				B70CEE3C19EE964400021D2F /* Utils */,
-				B7D2D56719E40AA9008C2A4C /* Factories */,
 				B7D2D56A19E40AA9008C2A4C /* Game */,
 				B7D2D57619E40AA9008C2A4C /* Managers */,
 			);
 			path = Engine;
-			sourceTree = "<group>";
-		};
-		B7D2D56719E40AA9008C2A4C /* Factories */ = {
-			isa = PBXGroup;
-			children = (
-				B7D2D56819E40AA9008C2A4C /* SceneFactory.cpp */,
-				B7D2D56919E40AA9008C2A4C /* SceneFactory.h */,
-			);
-			path = Factories;
 			sourceTree = "<group>";
 		};
 		B7D2D56A19E40AA9008C2A4C /* Game */ = {
@@ -255,7 +242,6 @@
 				B7D2D58219E40B3C008C2A4C /* InputManager.cpp in Sources */,
 				B7D2D58119E40B38008C2A4C /* Scene.cpp in Sources */,
 				B7A86DEC1992483D002F545A /* main.cpp in Sources */,
-				B7D2D57D19E40B2A008C2A4C /* SceneFactory.cpp in Sources */,
 				B7D2D57E19E40B2E008C2A4C /* Game.cpp in Sources */,
 				B7D2D57F19E40B32008C2A4C /* Entity.cpp in Sources */,
 				B7D2D58319E40B3E008C2A4C /* SceneManager.cpp in Sources */,
