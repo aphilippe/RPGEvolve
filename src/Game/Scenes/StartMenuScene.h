@@ -10,11 +10,11 @@
 #define __RPGEvolve__StartMenuScene__
 
 #include <stdio.h>
-#include "Scene.h"
+#include "../../Engine/Game/Scene/Scene.h"
 
 class StartMenuScene : public Scene {
-    
-    
+
+
 public:
     StartMenuScene();
 };

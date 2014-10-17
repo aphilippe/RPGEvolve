@@ -43,8 +43,12 @@ Thumbs.db
 *.opensdf
 platforms/MacOs/XCode/RPGEvolve/RPGEvolve.xcodeproj/project.xcworkspace/xcuserdata/
 platforms/MacOs/XCode/RPGEvolve/RPGEvolve.xcodeproj/xcuserdata/
+platforms/Linux/Codeblocks/RPGEvolve/*.depend
+platforms/Linux/Codeblocks/RPGEvolve/*.layout
 
 # Debug folders #
 #################
 platforms/Windows/VS2013/Debug/
 platforms/Windows/VS2013/Game/Debug/
+platforms/Linux/Codeblocks/RPGEvolve/bin
+platforms/Linux/Codeblocks/RPGEvolve/obj

@@ -8,6 +8,7 @@
 
 #include "Game.h"
 #include "../Managers/InputManager/InputManager.h"
+#include <cstring>
 
 Game* Game::current = nullptr;
 
@@ -39,7 +40,7 @@ Game::update()
         std::cout << "Entrez votre choix (\"exit\" to stop) :" << std::endl;
         manager.update();
         std::cout << "Votre choix est donc : " << manager.getInput() << std::endl;
-        
+
         if (strcmp(manager.getInput(), "exit") == 0) {
             std::cout << "Bye" << std::endl;
             this->stop();

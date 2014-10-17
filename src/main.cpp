@@ -4,13 +4,13 @@
 #include "Engine/Game/Scene/Scene.h"
 #include "Engine/Utils/GenericFactory.h"
 
-#include "StartMenuScene.h"
+#include "Game/Scenes/StartMenuScene.h"
 
 
 using namespace engine::utils;
 
 int main()
-{    
+{
     Game game;
     game.sceneManager().registerScene<StartMenuScene>(1);
     game.init();
