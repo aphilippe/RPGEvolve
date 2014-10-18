@@ -41,6 +41,8 @@ Game::update()
         manager.update();
         std::cout << "Votre choix est donc : " << manager.getInput() << std::endl;
 
+        _sceneManager.update();
+
         if (strcmp(manager.getInput(), "exit") == 0) {
             std::cout << "Bye" << std::endl;
             this->stop();

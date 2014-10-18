@@ -13,20 +13,25 @@
 #include "../../Game/Scene/Scene.h"
 
 class SceneManager {
-    
+
 private:
-    engine::utils::GenericFactory<Scene, int> _factory;
-    
+    engine::utils::GenericFactory<Scene, size_t> _factory;
+    std::shared_ptr<Scene> _currentScene;
+    std::shared_ptr<Scene> _nextScene;
+
 public:
-    
-    template<class SceneType> void registerScene(int key);
+
+    template<class SceneType> void registerScene(const std::string & key);
+    void activate(const std::string & name);
+    void update();
 };
 
 template<class SceneType>
 void
-SceneManager::registerScene(int key)
+SceneManager::registerScene(const std::string & key)
 {
-    _factory.registerObject<SceneType>(key);
+    std::hash<std::string> hash_fn;
+    _factory.registerObject<SceneType>(hash_fn(key));
 }
 
 #endif /* defined(__RPGEvolve__SceneManager__) */

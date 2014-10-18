@@ -17,10 +17,10 @@ class Scene
 private:
 
 public:
-	void start();
-	void init();
-	void update();
-	void stop();
+	virtual void start() = 0;
+	virtual void init() = 0;
+	virtual void update() = 0;
+	virtual void stop() = 0;
 
 };
 

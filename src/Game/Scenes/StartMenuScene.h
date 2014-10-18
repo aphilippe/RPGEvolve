@@ -17,6 +17,11 @@ class StartMenuScene : public Scene {
 
 public:
     StartMenuScene();
+
+    virtual void init();
+    virtual void start();
+    virtual void update();
+    virtual void stop();
 };
 
 #endif /* defined(__RPGEvolve__StartMenuScene__) */

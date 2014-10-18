@@ -9,12 +9,24 @@
 
 using namespace engine::utils;
 
+void initScenes(Game & game);
+
 int main()
 {
     Game game;
-    game.sceneManager().registerScene<StartMenuScene>(1);
+
+    initScenes(game);
+
     game.init();
     game.start();
 
 	return EXIT_SUCCESS;
+}
+
+void initScenes(Game & game)
+{
+    SceneManager& manager = game.sceneManager();
+    manager.registerScene<StartMenuScene>("start");
+
+    manager.activate("start");
 }

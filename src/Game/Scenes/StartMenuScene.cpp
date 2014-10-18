@@ -10,5 +10,30 @@
 
 StartMenuScene::StartMenuScene() : Scene()
 {
-    printf("plop");
+
+}
+
+void
+StartMenuScene::init()
+{
+    printf("\nInit\n");
+}
+
+
+void
+StartMenuScene::start()
+{
+    printf("\nStart\n");
+}
+
+void
+StartMenuScene::update()
+{
+    printf("\nUpdate\n");
+}
+
+void
+StartMenuScene::stop()
+{
+    printf("\nStop\n");
 }
