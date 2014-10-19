@@ -9,6 +9,15 @@
 #include "Scene.h"
 
 void
+Scene::start()
+{
+    for(auto it = _entities.begin(); it != _entities.end(); ++it)
+    {
+        (*it).get()->start();
+    }
+}
+
+void
 Scene::update()
 {
     for(auto it = _entities.begin(); it != _entities.end(); ++it)
@@ -21,4 +30,5 @@ void
 Scene::addEntity(std::shared_ptr<Entity> entity)
 {
     _entities.push_back(entity);
+    // TODO: start entity if scene is living
 }
