@@ -7,3 +7,18 @@
 //
 
 #include "Scene.h"
+
+void
+Scene::update()
+{
+    for(auto it = _entities.begin(); it != _entities.end(); ++it)
+    {
+        (*it).get()->update();
+    }
+}
+
+void
+Scene::addEntity(std::shared_ptr<Entity> entity)
+{
+    _entities.push_back(entity);
+}

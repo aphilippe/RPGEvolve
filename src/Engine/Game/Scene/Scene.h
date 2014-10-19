@@ -11,17 +11,22 @@
 
 #include <iostream>
 #include "../Entity/Entity.h"
+#include <vector>
+#include <memory>
+#include "../Entity/Entity.h"
 
 class Scene
 {
 private:
+    std::vector<std::shared_ptr<Entity>> _entities;
 
 public:
 	virtual void start() = 0;
 	virtual void init() = 0;
-	virtual void update() = 0;
+	virtual void update();
 	virtual void stop() = 0;
 
+    void addEntity(std::shared_ptr<Entity> entity);
 };
 
 #endif /* defined(__RPGEvolve__Scene__) */

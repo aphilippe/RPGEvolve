@@ -7,6 +7,8 @@
 //
 
 #include "StartMenuScene.h"
+#include "../../Engine/Game/Game.h"
+#include <memory>
 
 StartMenuScene::StartMenuScene() : Scene()
 {
@@ -17,6 +19,10 @@ void
 StartMenuScene::init()
 {
     printf("\nInit\n");
+    Game* game = Game::current;
+
+    std::shared_ptr<Entity> entity = game->entityFactory().createEntity();
+    this->addEntity(entity);
 }
 
 
@@ -29,6 +35,7 @@ StartMenuScene::start()
 void
 StartMenuScene::update()
 {
+    Scene::update();
     printf("\nUpdate\n");
 }
 

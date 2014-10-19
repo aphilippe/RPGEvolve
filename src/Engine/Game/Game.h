@@ -12,22 +12,27 @@
 #include <iostream>
 #include "../Managers/InputManager/InputManager.h"
 #include "../Managers/SceneManager/SceneManager.h"
+#include "../Factories/EntityFactory.h"
 
 class Game {
-    
+
 private:
     bool _living;
     InputManager _inputManager;
     SceneManager _sceneManager;
-    
+    engine::factories::EntityFactory _entityFactory;
+
+    void end();
+
 public:
     void init();
     void start();
     void stop();
     void update();
-    
+
     InputManager& inputManager();
     SceneManager& sceneManager();
+    engine::factories::EntityFactory& entityFactory();
 
 	static Game* current;
 };

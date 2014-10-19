@@ -36,18 +36,19 @@ Game::update()
 {
     while (_living)
     {
-        InputManager manager;
-        std::cout << "Entrez votre choix (\"exit\" to stop) :" << std::endl;
-        manager.update();
-        std::cout << "Votre choix est donc : " << manager.getInput() << std::endl;
+        //std::cout << "Entrez votre choix (\"exit\" to stop) :" << std::endl;
+        _inputManager.update();
+        //std::cout << "Votre choix est donc : " << _inputManager.getInput() << std::endl;
 
         _sceneManager.update();
 
-        if (strcmp(manager.getInput(), "exit") == 0) {
+        if (strcmp(_inputManager.getInput(), "exit") == 0) {
             std::cout << "Bye" << std::endl;
             this->stop();
         }
     }
+
+    this->end();
 }
 
 InputManager&
@@ -60,4 +61,16 @@ SceneManager&
 Game::sceneManager()
 {
     return _sceneManager;
+}
+
+engine::factories::EntityFactory&
+Game::entityFactory()
+{
+    return _entityFactory;
+}
+
+void
+Game::end()
+{
+
 }

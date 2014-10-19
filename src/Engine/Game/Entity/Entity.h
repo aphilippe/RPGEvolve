@@ -12,10 +12,13 @@
 #include <iostream>
 
 class Entity {
-    
-    
+
+
 public:
-    
+    virtual void start();
+	virtual void init();
+	virtual void update();
+	virtual void stop();
 };
 
 #endif /* defined(__RPGEvolve__Entity__) */

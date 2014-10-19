@@ -7,3 +7,27 @@
 //
 
 #include "Entity.h"
+
+void
+Entity::start()
+{
+    printf("Entity start");
+}
+
+void
+Entity::init()
+{
+    printf("Entity init");
+}
+
+void
+Entity::update()
+{
+    printf("Entity update");
+}
+
+void
+Entity::stop()
+{
+    printf("Entity stop");
+}
