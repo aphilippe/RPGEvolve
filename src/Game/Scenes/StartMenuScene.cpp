@@ -29,6 +29,7 @@ StartMenuScene::init()
 void
 StartMenuScene::start()
 {
+    Scene::start();
     printf("\nStart\n");
 }
 
