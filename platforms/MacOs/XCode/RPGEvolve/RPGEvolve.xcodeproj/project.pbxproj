@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B79D0B4219F7CD8A0016FF54 /* EntityFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B79D0B4019F7CD440016FF54 /* EntityFactory.cpp */; };
 		B7A86DEC1992483D002F545A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7A86DEB1992483D002F545A /* main.cpp */; };
 		B7D2D57E19E40B2E008C2A4C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D57119E40AA9008C2A4C /* Game.cpp */; };
 		B7D2D57F19E40B32008C2A4C /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D2D56F19E40AA9008C2A4C /* Entity.cpp */; };
@@ -31,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		B70CEE3D19EE964400021D2F /* GenericFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericFactory.h; sourceTree = "<group>"; };
+		B79D0B4019F7CD440016FF54 /* EntityFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EntityFactory.cpp; sourceTree = "<group>"; };
+		B79D0B4119F7CD440016FF54 /* EntityFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntityFactory.h; sourceTree = "<group>"; };
 		B7A86DDC199247A0002F545A /* RPGEvolve */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RPGEvolve; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A86DEB1992483D002F545A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../../src/main.cpp; sourceTree = "<group>"; };
 		B7D2D56C19E40AA9008C2A4C /* Component.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
@@ -68,6 +71,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		B79D0B3F19F7CD440016FF54 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				B79D0B4019F7CD440016FF54 /* EntityFactory.cpp */,
+				B79D0B4119F7CD440016FF54 /* EntityFactory.h */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		B7A86DD3199247A0002F545A = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +110,7 @@
 		B7D2D56619E40AA9008C2A4C /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				B79D0B3F19F7CD440016FF54 /* Factories */,
 				B70CEE3C19EE964400021D2F /* Utils */,
 				B7D2D56A19E40AA9008C2A4C /* Game */,
 				B7D2D57619E40AA9008C2A4C /* Managers */,
@@ -239,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B79D0B4219F7CD8A0016FF54 /* EntityFactory.cpp in Sources */,
 				B7D2D58219E40B3C008C2A4C /* InputManager.cpp in Sources */,
 				B7D2D58119E40B38008C2A4C /* Scene.cpp in Sources */,
 				B7A86DEC1992483D002F545A /* main.cpp in Sources */,
