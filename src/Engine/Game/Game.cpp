@@ -72,5 +72,5 @@ Game::entityFactory()
 void
 Game::end()
 {
-
+    _sceneManager.stop();
 }

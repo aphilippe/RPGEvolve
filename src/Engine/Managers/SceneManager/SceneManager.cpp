@@ -34,3 +34,13 @@ SceneManager::update()
 
     _currentScene.get()->update();
 }
+
+void
+SceneManager::stop()
+{
+    if (_currentScene != nullptr)
+    {
+        _currentScene.get()->stop();
+        _currentScene = nullptr;
+    }
+}

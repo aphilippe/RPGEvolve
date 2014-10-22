@@ -24,6 +24,7 @@ public:
     template<class SceneType> void registerScene(const std::string & key);
     void activate(const std::string & name);
     void update();
+    void stop();
 };
 
 template<class SceneType>

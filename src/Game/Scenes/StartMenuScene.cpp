@@ -43,5 +43,6 @@ StartMenuScene::update()
 void
 StartMenuScene::stop()
 {
+    Scene::stop();
     printf("\nStop\n");
 }

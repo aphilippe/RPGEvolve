@@ -32,3 +32,13 @@ Scene::addEntity(std::shared_ptr<Entity> entity)
     _entities.push_back(entity);
     // TODO: start entity if scene is living
 }
+
+void
+Scene::stop()
+{
+    for(auto it = _entities.begin(); it != _entities.end(); ++it)
+    {
+        (*it).get()->stop();
+    }
+    _entities.clear();
+}
