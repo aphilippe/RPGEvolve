@@ -12,6 +12,10 @@ void
 Entity::start()
 {
     printf("Entity start");
+	for (auto it = _components.begin(); it != _components.end(); it++)
+	{
+		it->second.get()->awake();
+	}
 }
 
 void
@@ -24,12 +28,20 @@ void
 Entity::update()
 {
     printf("Entity update");
+	for (auto it = _components.begin(); it != _components.end(); it++)
+	{
+		it->second.get()->update();
+	}
 }
 
 void
 Entity::stop()
 {
     printf("Entity stop");
+	for (auto it = _components.begin(); it != _components.end(); it++)
+	{
+		it->second.get()->stop();
+	}
 }
 
 void
@@ -50,7 +62,7 @@ Entity::removeComponent(const std::string & componentId)
 	auto it = _components.find(componentId);
 	if (it == _components.end())
 	{
-		// exception
+		throw std::exception("Trying to remove a component that doesn't exist");
 	}
 
 	Component* component = it->second.get();
