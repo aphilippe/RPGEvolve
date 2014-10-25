@@ -10,15 +10,23 @@
 #define __RPGEvolve__Entity__
 
 #include <iostream>
+#include <map>
+#include <memory>
+#include "../Component/Component.h"
 
 class Entity {
-
+private:
+	std::map<std::string, std::shared_ptr<Component>> _components;
 
 public:
     virtual void start();
 	virtual void init();
 	virtual void update();
 	virtual void stop();
+
+	void addComponent(std::shared_ptr<Component> component);
+	void removeComponent(const std::string & componentId);
+	std::shared_ptr<Component> getComponent(const std::string & componentId);
 };
 
 #endif /* defined(__RPGEvolve__Entity__) */

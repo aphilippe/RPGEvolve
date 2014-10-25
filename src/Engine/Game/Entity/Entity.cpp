@@ -31,3 +31,36 @@ Entity::stop()
 {
     printf("Entity stop");
 }
+
+void
+Entity::addComponent(std::shared_ptr<Component> component)
+{
+	std::string componentId = component.get()->componentId();
+	if (_components.find(componentId) != _components.end())
+	{
+		this->removeComponent(componentId);
+	}
+
+	_components[componentId] = component;
+}
+
+void
+Entity::removeComponent(const std::string & componentId)
+{
+	auto it = _components.find(componentId);
+	if (it == _components.end())
+	{
+		// exception
+	}
+
+	Component* component = it->second.get();
+	component->stop();
+
+	_components.erase(it);
+}
+
+std::shared_ptr<Component>
+Entity::getComponent(const std::string & componentId)
+{
+	return _components[componentId];
+}
