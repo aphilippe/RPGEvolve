@@ -62,7 +62,7 @@ Entity::removeComponent(const std::string & componentId)
 	auto it = _components.find(componentId);
 	if (it == _components.end())
 	{
-		throw std::exception("Trying to remove a component that doesn't exist");
+        throw "Trying to remove a component that doesn't exist";
 	}
 
 	Component* component = it->second.get();
