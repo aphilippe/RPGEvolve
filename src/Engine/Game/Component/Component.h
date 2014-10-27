@@ -10,6 +10,7 @@
 #define __RPGEvolve__Component__
 
 #include <iostream>
+#include <string>
 
 class Component {
     
@@ -27,6 +28,10 @@ public:
     
     // Call every frame after all update function have been called
     virtual void lateUpdate();
+
+	virtual void stop();
+
+	virtual std::string componentId() = 0;
     
 };
 

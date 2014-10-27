@@ -13,69 +13,99 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers sources\Engine">
+      <UniqueIdentifier>{9c9955a5-9c4f-4aa0-9ebb-a326d03d12e4}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Fichiers sources\Game">
-      <UniqueIdentifier>{68eacc3b-f27e-41c2-931b-f2ece5bd4c97}</UniqueIdentifier>
+      <UniqueIdentifier>{b81b33c2-59e7-4559-8b13-bb62cfa4688f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\Game\Scene">
-      <UniqueIdentifier>{42ac6122-b9d5-4066-abf8-30b5c8b9cb94}</UniqueIdentifier>
+    <Filter Include="Fichiers sources\Game\Scenes">
+      <UniqueIdentifier>{dd8fc52e-861e-4a4b-88b6-c26de9dcf94f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\Game\Entity">
-      <UniqueIdentifier>{7c67e9c6-f26b-431c-9d31-8e73b1de7136}</UniqueIdentifier>
+    <Filter Include="Fichiers sources\Engine\Factories">
+      <UniqueIdentifier>{9be89f91-d799-4a84-942b-59d75e6b2bcd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\Game\Component">
-      <UniqueIdentifier>{f8b6d6c8-e20a-46ba-8ece-876af2c45c4b}</UniqueIdentifier>
+    <Filter Include="Fichiers sources\Engine\Game">
+      <UniqueIdentifier>{345009a7-c548-42b2-8407-5e121eca2123}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\Managers">
-      <UniqueIdentifier>{2904a021-14c0-4e1f-b941-248038fefe8f}</UniqueIdentifier>
+    <Filter Include="Fichiers sources\Engine\Managers">
+      <UniqueIdentifier>{e5395e95-de81-437f-beac-dfe6f0996958}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\Managers\InputManager">
-      <UniqueIdentifier>{b1e175b9-f736-4116-8352-48a48d350ff7}</UniqueIdentifier>
+    <Filter Include="Fichiers sources\Engine\Utils">
+      <UniqueIdentifier>{29fe3265-007f-4b3d-a330-514989ed7c98}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\Managers\SceneManager">
-      <UniqueIdentifier>{6e9505ba-f584-4a61-a861-cdb23143ed64}</UniqueIdentifier>
+    <Filter Include="Fichiers sources\Engine\Game\Component">
+      <UniqueIdentifier>{1a880b63-0116-4dda-8cbf-0d54ab883e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Engine\Game\Entity">
+      <UniqueIdentifier>{63d8138c-9e67-4b01-8908-ad1d0c0620eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Engine\Game\Scene">
+      <UniqueIdentifier>{66f22ccd-bd1b-48a2-a64a-e4a06b39a60e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Engine\Managers\InputManagers">
+      <UniqueIdentifier>{a34b9571-121f-406a-bb98-bc9ca85a22f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Engine\Managers\SceneManager">
+      <UniqueIdentifier>{f1a66080-1974-455a-9e42-846aa3bb3aff}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\src\main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\Game\Game.cpp">
-      <Filter>Fichiers sources\Game</Filter>
+    <ClCompile Include="..\..\..\..\src\Game\Scenes\StartMenuScene.cpp">
+      <Filter>Fichiers sources\Game\Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\Game\Component\Component.cpp">
-      <Filter>Fichiers sources\Game\Component</Filter>
+    <ClCompile Include="..\..\..\..\src\Engine\Factories\EntityFactory.cpp">
+      <Filter>Fichiers sources\Engine\Factories</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\Game\Entity\Entity.cpp">
-      <Filter>Fichiers sources\Game\Entity</Filter>
+    <ClCompile Include="..\..\..\..\src\Engine\Game\Entity\Entity.cpp">
+      <Filter>Fichiers sources\Engine\Game\Entity</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\Game\Scene\Scene.cpp">
-      <Filter>Fichiers sources\Game\Scene</Filter>
+    <ClCompile Include="..\..\..\..\src\Engine\Game\Component\Component.cpp">
+      <Filter>Fichiers sources\Engine\Game\Component</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\Managers\SceneManager\SceneManager.cpp">
-      <Filter>Fichiers sources\Managers\SceneManager</Filter>
+    <ClCompile Include="..\..\..\..\src\Engine\Game\Game.cpp">
+      <Filter>Fichiers sources\Engine\Game</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\Managers\InputManager\InputManager.cpp">
-      <Filter>Fichiers sources\Managers\InputManager</Filter>
+    <ClCompile Include="..\..\..\..\src\Engine\Game\Scene\Scene.cpp">
+      <Filter>Fichiers sources\Engine\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Engine\Managers\InputManager\InputManager.cpp">
+      <Filter>Fichiers sources\Engine\Managers\InputManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Engine\Managers\SceneManager\SceneManager.cpp">
+      <Filter>Fichiers sources\Engine\Managers\SceneManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\src\Game\Game.h">
-      <Filter>Fichiers sources\Game</Filter>
+    <ClInclude Include="..\..\..\..\src\Game\Scenes\StartMenuScene.h">
+      <Filter>Fichiers sources\Game\Scenes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\src\Game\Component\Component.h">
-      <Filter>Fichiers sources\Game\Component</Filter>
+    <ClInclude Include="..\..\..\..\src\Engine\Factories\EntityFactory.h">
+      <Filter>Fichiers sources\Engine\Factories</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\src\Game\Entity\Entity.h">
-      <Filter>Fichiers sources\Game\Entity</Filter>
+    <ClInclude Include="..\..\..\..\src\Engine\Game\Entity\Entity.h">
+      <Filter>Fichiers sources\Engine\Game\Entity</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\src\Game\Scene\Scene.h">
-      <Filter>Fichiers sources\Game\Scene</Filter>
+    <ClInclude Include="..\..\..\..\src\Engine\Game\Component\Component.h">
+      <Filter>Fichiers sources\Engine\Game\Component</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\src\Managers\SceneManager\SceneManager.h">
-      <Filter>Fichiers sources\Managers\SceneManager</Filter>
+    <ClInclude Include="..\..\..\..\src\Engine\Game\Game.h">
+      <Filter>Fichiers sources\Engine\Game</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\src\Managers\InputManager\InputManager.h">
-      <Filter>Fichiers sources\Managers\InputManager</Filter>
+    <ClInclude Include="..\..\..\..\src\Engine\Game\Scene\Scene.h">
+      <Filter>Fichiers sources\Engine\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Engine\Managers\InputManager\InputManager.h">
+      <Filter>Fichiers sources\Engine\Managers\InputManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Engine\Managers\SceneManager\SceneManager.h">
+      <Filter>Fichiers sources\Engine\Managers\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Engine\Utils\GenericFactory.h">
+      <Filter>Fichiers sources\Engine\Utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
