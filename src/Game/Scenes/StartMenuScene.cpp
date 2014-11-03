@@ -9,6 +9,7 @@
 #include "StartMenuScene.h"
 #include "../../Engine/Game/Game.h"
 #include <memory>
+#include "../Components/TextComponent.h"
 
 StartMenuScene::StartMenuScene() : Scene()
 {
@@ -23,6 +24,8 @@ StartMenuScene::init()
 
     std::shared_ptr<Entity> entity = game->entityFactory().createEntity();
     this->addEntity(entity);
+    
+
 }
 
 

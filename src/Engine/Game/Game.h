@@ -13,6 +13,8 @@
 #include "../Managers/InputManager/InputManager.h"
 #include "../Managers/SceneManager/SceneManager.h"
 #include "../Factories/EntityFactory.h"
+#include "../Utils/GenericFactory.h"
+#include "Component/Component.h"
 
 class Game {
 

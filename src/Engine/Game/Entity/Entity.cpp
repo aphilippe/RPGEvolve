@@ -8,6 +8,8 @@
 
 #include "Entity.h"
 
+using namespace engine::game::component;
+
 void
 Entity::start()
 {
@@ -54,6 +56,7 @@ Entity::addComponent(std::shared_ptr<Component> component)
 	}
 
 	_components[componentId] = component;
+    component.get()->init();
 }
 
 void

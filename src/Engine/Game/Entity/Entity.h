@@ -16,7 +16,7 @@
 
 class Entity {
 private:
-	std::map<std::string, std::shared_ptr<Component>> _components;
+    std::map<std::string, std::shared_ptr<engine::game::component::Component>> _components;
 
 public:
     virtual void start();
@@ -24,9 +24,9 @@ public:
 	virtual void update();
 	virtual void stop();
 
-	void addComponent(std::shared_ptr<Component> component);
+	void addComponent(std::shared_ptr<engine::game::component::Component> component);
 	void removeComponent(const std::string & componentId);
-	std::shared_ptr<Component> getComponent(const std::string & componentId);
+	std::shared_ptr<engine::game::component::Component> getComponent(const std::string & componentId);
 };
 
 #endif /* defined(__RPGEvolve__Entity__) */

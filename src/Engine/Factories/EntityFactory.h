@@ -2,6 +2,8 @@
 #define ENTITYFACTORY_H
 #include <memory>
 #include "../Game/Entity/Entity.h"
+#include "../Utils/GenericFactory.h"
+#include "../Game/Component/Component.h"
 
 namespace engine {
 

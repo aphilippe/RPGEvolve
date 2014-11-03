@@ -12,27 +12,35 @@
 #include <iostream>
 #include <string>
 
-class Component {
-    
-    
-public:
-    
-    // Call when component is add in Entity. Initialize all fields
-    virtual void init();
-    
-    // Call when entity is add in Scene.
-    virtual void awake();
-    
-    // Call every frame.
-    virtual void update() = 0;
-    
-    // Call every frame after all update function have been called
-    virtual void lateUpdate();
-
-	virtual void stop();
-
-	virtual std::string componentId() = 0;
-    
-};
-
+namespace engine {
+    namespace game {
+        namespace component {
+            
+            class Component {
+                
+                
+            public:
+                
+                // Call when component is add in Entity. Initialize all fields
+                virtual void init() = 0;
+                
+                // Call when entity is add in Scene.
+                virtual void awake() = 0;
+                
+                // Call every frame.
+                virtual void update() = 0;
+                
+                // Call every frame after all update function have been called
+                virtual void lateUpdate() = 0;
+                
+                // Call when component is disabled
+                virtual void stop() = 0;
+                
+                virtual std::string componentId() = 0;
+                
+            };
+            
+        }
+    }
+}
 #endif /* defined(__RPGEvolve__Component__) */

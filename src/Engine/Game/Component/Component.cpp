@@ -7,3 +7,5 @@
 //
 
 #include "Component.h"
+
+using namespace engine::game::component;
