@@ -19,6 +19,7 @@ TextComponent::componentId()
 void
 TextComponent::init()
 {
+    BehaviourComponent::init();
     _text = "";
 }
 
@@ -31,7 +32,7 @@ TextComponent::awake()
 void
 TextComponent::update()
 {
-    
+    printf("plop");
 }
 
 void

@@ -31,8 +31,6 @@ SceneManager::update()
 
         _nextScene = nullptr;
     }
-
-    _currentScene.get()->update();
 }
 
 void

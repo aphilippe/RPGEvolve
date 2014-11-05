@@ -21,7 +21,6 @@ private:
 public:
     virtual void start();
 	virtual void init();
-	virtual void update();
 	virtual void stop();
 
 	void addComponent(std::shared_ptr<engine::game::component::Component> component);

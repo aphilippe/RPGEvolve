@@ -11,13 +11,13 @@
 
 #include <stdio.h>
 #include <string>
-#include "../../Engine/Game/Component/Component.h"
+#include "../../Engine/Game/Component/subclasses/BehaviourComponent.h"
 
 namespace game
 {
     namespace components
     {
-        class TextComponent : public engine::game::component::Component
+        class TextComponent : public engine::game::component::BehaviourComponent
         {
         protected:
             std::string _text;

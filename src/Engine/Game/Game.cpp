@@ -41,6 +41,8 @@ Game::update()
         //std::cout << "Votre choix est donc : " << _inputManager.getInput() << std::endl;
 
         _sceneManager.update();
+        
+        _behaviourSubsystem.update();
 
         if (strcmp(_inputManager.getInput(), "exit") == 0) {
             std::cout << "Bye" << std::endl;
@@ -67,6 +69,12 @@ engine::factories::EntityFactory&
 Game::entityFactory()
 {
     return _entityFactory;
+}
+
+engine::game::subsystems::BehaviourSubSystem&
+Game::behaviourSubsystem()
+{
+    return _behaviourSubsystem;
 }
 
 void

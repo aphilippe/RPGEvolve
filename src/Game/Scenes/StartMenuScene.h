@@ -20,7 +20,6 @@ public:
 
     virtual void init();
     virtual void start();
-    virtual void update();
     virtual void stop();
 };
 

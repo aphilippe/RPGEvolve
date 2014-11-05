@@ -27,16 +27,6 @@ Entity::init()
 }
 
 void
-Entity::update()
-{
-    printf("Entity update");
-	for (auto it = _components.begin(); it != _components.end(); it++)
-	{
-		it->second.get()->update();
-	}
-}
-
-void
 Entity::stop()
 {
     printf("Entity stop");

@@ -27,12 +27,6 @@ namespace engine {
                 // Call when entity is add in Scene.
                 virtual void awake() = 0;
                 
-                // Call every frame.
-                virtual void update() = 0;
-                
-                // Call every frame after all update function have been called
-                virtual void lateUpdate() = 0;
-                
                 // Call when component is disabled
                 virtual void stop() = 0;
                 

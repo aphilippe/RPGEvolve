@@ -24,7 +24,6 @@ StartMenuScene::init()
 
     std::shared_ptr<Entity> entity = game->entityFactory().createEntity();
     this->addEntity(entity);
-    
 
 }
 
@@ -34,13 +33,6 @@ StartMenuScene::start()
 {
     Scene::start();
     printf("\nStart\n");
-}
-
-void
-StartMenuScene::update()
-{
-    Scene::update();
-    printf("\nUpdate\n");
 }
 
 void

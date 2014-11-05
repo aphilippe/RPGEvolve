@@ -23,7 +23,6 @@ private:
 public:
 	virtual void start() = 0;
 	virtual void init() = 0;
-	virtual void update();
 	virtual void stop();
 
     void addEntity(std::shared_ptr<Entity> entity);
