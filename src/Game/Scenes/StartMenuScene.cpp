@@ -33,6 +33,7 @@ StartMenuScene::init()
 
 	std::shared_ptr<TextComponent> textComponent = std::static_pointer_cast<TextComponent>( ComponentFactory::instance().createObject("TextComponent"));
 	entity.get()->addComponent(textComponent);
+	textComponent.get()->setText("plop");
 
 	std::shared_ptr<TextRenderComponent> textRender = std::static_pointer_cast<TextRenderComponent>(ComponentFactory::instance().createObject("TextRenderComponent"));
 	entity.get()->addComponent(textRender);

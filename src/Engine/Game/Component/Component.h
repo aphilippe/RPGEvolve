@@ -12,6 +12,8 @@
 #include <iostream>
 #include <string>
 
+class Entity;
+
 namespace engine {
     namespace game {
         namespace component {
@@ -32,6 +34,11 @@ namespace engine {
                 
                 virtual std::string componentId() = 0;
                 
+				Entity* getEntity();
+				void setEntity(Entity* entity);
+
+			protected:
+				Entity* _entity;
             };
             
         }

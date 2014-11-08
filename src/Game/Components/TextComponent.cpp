@@ -13,7 +13,7 @@ using namespace game::components;
 std::string
 TextComponent::componentId()
 {
-    return "textComponent";
+    return "TextComponent";
 }
 
 void

@@ -9,3 +9,15 @@
 #include "Component.h"
 
 using namespace engine::game::component;
+
+Entity*
+Component::getEntity()
+{
+	return _entity;
+}
+
+void
+Component::setEntity(Entity* entity)
+{
+	_entity = entity;
+}

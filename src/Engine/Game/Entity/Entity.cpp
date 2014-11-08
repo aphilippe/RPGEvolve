@@ -46,6 +46,7 @@ Entity::addComponent(std::shared_ptr<Component> component)
 	}
 
 	_components[componentId] = component;
+	component.get()->setEntity(this);
     component.get()->init();
 }
 
