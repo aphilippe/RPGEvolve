@@ -16,6 +16,7 @@
 #include "../Utils/GenericFactory.h"
 #include "Component/Component.h"
 #include "SubSystems/BehaviourSubSystem.h"
+#include "SubSystems/RenderSubSystem.h"
 
 class Game {
 
@@ -25,6 +26,7 @@ private:
     SceneManager _sceneManager;
     engine::factories::EntityFactory _entityFactory;
     engine::game::subsystems::BehaviourSubSystem _behaviourSubsystem;
+	engine::game::subsystems::RenderSubSystem _renderSubsystem;
 
     void end();
 
@@ -38,6 +40,7 @@ public:
     SceneManager& sceneManager();
     engine::factories::EntityFactory& entityFactory();
     engine::game::subsystems::BehaviourSubSystem& behaviourSubsystem();
+	engine::game::subsystems::RenderSubSystem& renderSubsystem();
     
 	static Game* current;
 };

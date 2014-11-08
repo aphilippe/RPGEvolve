@@ -82,10 +82,12 @@
     <ClCompile Include="..\..\..\..\src\Engine\Factories\EntityFactory.cpp" />
     <ClCompile Include="..\..\..\..\src\Engine\Game\Component\Component.cpp" />
     <ClCompile Include="..\..\..\..\src\Engine\Game\Component\subclasses\BehaviourComponent.cpp" />
+    <ClCompile Include="..\..\..\..\src\Engine\Game\Component\subclasses\RenderComponent.cpp" />
     <ClCompile Include="..\..\..\..\src\Engine\Game\Entity\Entity.cpp" />
     <ClCompile Include="..\..\..\..\src\Engine\Game\Game.cpp" />
     <ClCompile Include="..\..\..\..\src\Engine\Game\Scene\Scene.cpp" />
     <ClCompile Include="..\..\..\..\src\Engine\Game\SubSystems\BehaviourSubSystem.cpp" />
+    <ClCompile Include="..\..\..\..\src\Engine\Game\SubSystems\RenderSubSystem.cpp" />
     <ClCompile Include="..\..\..\..\src\Engine\Managers\InputManager\InputManager.cpp" />
     <ClCompile Include="..\..\..\..\src\Engine\Managers\SceneManager\SceneManager.cpp" />
     <ClCompile Include="..\..\..\..\src\Game\Components\TextComponent.cpp" />
@@ -97,10 +99,12 @@
     <ClInclude Include="..\..\..\..\src\Engine\Factories\EntityFactory.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Game\Component\Component.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Game\Component\subclasses\BehaviourComponent.h" />
+    <ClInclude Include="..\..\..\..\src\Engine\Game\Component\subclasses\RenderComponent.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Game\Entity\Entity.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Game\Game.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Game\Scene\Scene.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Game\SubSystems\BehaviourSubSystem.h" />
+    <ClInclude Include="..\..\..\..\src\Engine\Game\SubSystems\RenderSubSystem.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Managers\InputManager\InputManager.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Managers\SceneManager\SceneManager.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Utils\GenericFactory.h" />

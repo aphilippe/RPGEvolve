@@ -36,13 +36,13 @@ Game::update()
 {
     while (_living)
     {
-        //std::cout << "Entrez votre choix (\"exit\" to stop) :" << std::endl;
         _inputManager.update();
-        //std::cout << "Votre choix est donc : " << _inputManager.getInput() << std::endl;
 
         _sceneManager.update();
         
         _behaviourSubsystem.update();
+
+		_renderSubsystem.render();
 
         if (strcmp(_inputManager.getInput(), "exit") == 0) {
             std::cout << "Bye" << std::endl;
@@ -75,6 +75,12 @@ engine::game::subsystems::BehaviourSubSystem&
 Game::behaviourSubsystem()
 {
     return _behaviourSubsystem;
+}
+
+engine::game::subsystems::RenderSubSystem&
+Game::renderSubsystem()
+{
+	return _renderSubsystem;
 }
 
 void

@@ -99,6 +99,12 @@
     <ClCompile Include="..\..\..\..\src\Engine\Factories\ComponentsFactory.cpp">
       <Filter>Fichiers sources\Engine\Factories</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Engine\Game\Component\subclasses\RenderComponent.cpp">
+      <Filter>Fichiers sources\Engine\Game\Component\subclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Engine\Game\SubSystems\RenderSubSystem.cpp">
+      <Filter>Fichiers sources\Engine\Game\Subsystems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\src\Game\Scenes\StartMenuScene.h">
@@ -139,6 +145,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\src\Engine\Factories\ComponentsFactory.h">
       <Filter>Fichiers sources\Engine\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Engine\Game\Component\subclasses\RenderComponent.h">
+      <Filter>Fichiers sources\Engine\Game\Component\subclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Engine\Game\SubSystems\RenderSubSystem.h">
+      <Filter>Fichiers sources\Engine\Game\Subsystems</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
