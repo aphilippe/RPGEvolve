@@ -41,6 +41,7 @@ Thumbs.db
 *.suo
 *.sdf
 *.opensdf
+platforms/Windows/VS2013/Game/*.user
 platforms/MacOs/XCode/RPGEvolve/RPGEvolve.xcodeproj/project.xcworkspace/xcuserdata/
 platforms/MacOs/XCode/RPGEvolve/RPGEvolve.xcodeproj/xcuserdata/
 platforms/Linux/Codeblocks/RPGEvolve/*.depend
