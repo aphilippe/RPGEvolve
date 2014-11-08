@@ -8,13 +8,15 @@
 
 #include "InputManager.h"
 #include <iostream>
+#include <sstream>
 
 void InputManager::update()
 {
-    std::cin >> this->_currentInput;
+	std::getline(std::cin, this->_currentInput);
 }
 
-char* InputManager::getInput()
+std::string
+InputManager::getInput()
 {
     return this->_currentInput;
 }

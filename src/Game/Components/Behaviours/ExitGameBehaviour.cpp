@@ -24,7 +24,7 @@ void
 ExitGameBehaviour::update()
 {
 	Game* currentGame = Game::current;
-	if (strcmp(currentGame->inputManager().getInput(), "exit") == 0)
+	if (currentGame->inputManager().getInput() == "exit")
 	{
 		currentGame->stop();
 		std::shared_ptr<TextComponent> textComponent = std::static_pointer_cast<TextComponent>(this->getEntity()->getComponent("TextComponent"));

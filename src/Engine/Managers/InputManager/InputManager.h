@@ -14,11 +14,11 @@
 class InputManager
 {
 private:
-    char _currentInput[25];
+    std::string _currentInput;
     
 public:
     void update();
-    char* getInput();
+	std::string getInput();
 };
 
 #endif /* defined(__RPGEvolve__InputManager__) */
