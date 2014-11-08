@@ -11,30 +11,21 @@
 
 #include "../Utils/GenericFactory.h"
 #include "../Game/Component/Component.h"
+#include "../Game/Component/subclasses/BehaviourComponent.h"
 #include <memory>
 
 namespace engine
 {
     namespace factories
     {
-        class ComponentFactory
+        class ComponentFactory : public engine::utils::GenericFactory<engine::game::component::Component, std::string>
         {
         private:
-            engine::utils::GenericFactory<engine::game::component::Component, size_t> _creator;
+			static ComponentFactory _instance;
             
         public:
-            template<class ComponentType> void registerComponent(const std::string & key);
-            std::shared_ptr<engine::game::component::Component> createComponent(const std::string & key);
+			static ComponentFactory& instance();
         };
-
-
-        template<class ComponentType>
-        void
-        ComponentFactory::registerComponent(const std::string & key)
-        {
-            std::hash<std::string> hash_fn;
-            _creator.registerObject<ComponentType>(hash_fn(key));
-        }
     }
 }
 #endif /* defined(__RPGEvolve__ComponentsFactory__) */

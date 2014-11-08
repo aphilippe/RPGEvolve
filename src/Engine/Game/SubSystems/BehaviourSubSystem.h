@@ -13,7 +13,7 @@
 #include <vector>
 #include "../Component/subclasses/BehaviourComponent.h"
 #include <memory>
-#include "BehaviourComponent.h"
+#include "../Component/subclasses/BehaviourComponent.h"
 
 namespace engine {
     namespace game {

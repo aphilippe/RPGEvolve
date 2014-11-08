@@ -49,6 +49,15 @@
     <Filter Include="Fichiers sources\Engine\Managers\SceneManager">
       <UniqueIdentifier>{f1a66080-1974-455a-9e42-846aa3bb3aff}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Engine\Game\Component\subclass">
+      <UniqueIdentifier>{29b44aa1-1f4c-4e2c-b008-32db7fcf1194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Engine\Game\Subsystems">
+      <UniqueIdentifier>{4f4e60d5-4620-4d34-8f20-7bb2c1e4d71a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Game\Components">
+      <UniqueIdentifier>{6ecf864a-6428-4682-b834-af0df154b7f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\src\main.cpp">
@@ -78,6 +87,18 @@
     <ClCompile Include="..\..\..\..\src\Engine\Managers\SceneManager\SceneManager.cpp">
       <Filter>Fichiers sources\Engine\Managers\SceneManager</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Engine\Game\Component\subclasses\BehaviourComponent.cpp">
+      <Filter>Fichiers sources\Engine\Game\Component\subclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Engine\Game\SubSystems\BehaviourSubSystem.cpp">
+      <Filter>Fichiers sources\Engine\Game\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Game\Components\TextComponent.cpp">
+      <Filter>Fichiers sources\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Engine\Factories\ComponentsFactory.cpp">
+      <Filter>Fichiers sources\Engine\Factories</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\src\Game\Scenes\StartMenuScene.h">
@@ -106,6 +127,18 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\src\Engine\Utils\GenericFactory.h">
       <Filter>Fichiers sources\Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Engine\Game\Component\subclasses\BehaviourComponent.h">
+      <Filter>Fichiers sources\Engine\Game\Component\subclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Engine\Game\SubSystems\BehaviourSubSystem.h">
+      <Filter>Fichiers sources\Engine\Game\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Game\Components\TextComponent.h">
+      <Filter>Fichiers sources\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Engine\Factories\ComponentsFactory.h">
+      <Filter>Fichiers sources\Engine\Factories</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

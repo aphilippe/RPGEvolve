@@ -21,7 +21,7 @@ namespace engine
             class BehaviourComponent : public engine::game::component::Component
             {
             public:
-                
+
                 virtual void init();
                 
                 virtual void update() = 0;

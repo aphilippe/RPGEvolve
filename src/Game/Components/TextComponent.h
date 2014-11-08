@@ -23,6 +23,7 @@ namespace game
             std::string _text;
             
         public:
+
             std::string getText() const;
             void setText(const std::string & text);
             

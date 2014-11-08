@@ -10,9 +10,10 @@
 
 using namespace engine::factories;
 
-std::shared_ptr<engine::game::component::Component>
-ComponentFactory::createComponent(const std::string & key)
+ComponentFactory ComponentFactory::_instance = ComponentFactory();
+
+ComponentFactory&
+ComponentFactory::instance()
 {
-    std::hash<std::string> hash_fn;
-    return _creator.createObject(hash_fn(key));
+	return _instance;
 }
