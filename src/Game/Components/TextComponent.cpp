@@ -19,24 +19,11 @@ TextComponent::componentId()
 void
 TextComponent::init()
 {
-    BehaviourComponent::init();
     _text = "";
 }
 
 void
 TextComponent::awake()
-{
-    
-}
-
-void
-TextComponent::update()
-{
-    printf("plop");
-}
-
-void
-TextComponent::lateUpdate()
 {
     
 }

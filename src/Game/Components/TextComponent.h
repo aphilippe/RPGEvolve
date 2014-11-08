@@ -11,13 +11,13 @@
 
 #include <stdio.h>
 #include <string>
-#include "../../Engine/Game/Component/subclasses/BehaviourComponent.h"
+#include "../../Engine/Game/Component/Component.h"
 
 namespace game
 {
     namespace components
     {
-        class TextComponent : public engine::game::component::BehaviourComponent
+        class TextComponent : public engine::game::component::Component
         {
         protected:
             std::string _text;
@@ -30,8 +30,6 @@ namespace game
             std::string componentId();
             void init();
             void awake();
-            void update();
-            void lateUpdate();
             void stop();
         };
     }

@@ -105,6 +105,9 @@
     <ClCompile Include="..\..\..\..\src\Engine\Game\SubSystems\RenderSubSystem.cpp">
       <Filter>Fichiers sources\Engine\Game\Subsystems</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Game\Components\TextRenderComponent.cpp">
+      <Filter>Fichiers sources\Game\Components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\src\Game\Scenes\StartMenuScene.h">
@@ -151,6 +154,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\src\Engine\Game\SubSystems\RenderSubSystem.h">
       <Filter>Fichiers sources\Engine\Game\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Game\Components\TextRenderComponent.h">
+      <Filter>Fichiers sources\Game\Components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

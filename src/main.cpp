@@ -6,7 +6,9 @@
 #include "Engine/Factories/ComponentsFactory.h"
 
 #include "Game/Scenes/StartMenuScene.h"
+
 #include "Game/Components/TextComponent.h"
+#include "Game/Components/TextRenderComponent.h"
 
 
 using namespace engine::utils;
@@ -41,4 +43,5 @@ void initComponentsFactory()
 	engine::factories::ComponentFactory& factory = engine::factories::ComponentFactory::instance();
 
 	factory.registerObject<game::components::TextComponent>("TextComponent");
+	factory.registerObject<game::components::TextRenderComponent>("TextRenderComponent");
 }

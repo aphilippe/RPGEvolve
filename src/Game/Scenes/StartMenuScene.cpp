@@ -9,8 +9,10 @@
 #include "StartMenuScene.h"
 #include "../../Engine/Game/Game.h"
 #include <memory>
-#include "../Components/TextComponent.h"
 #include "../../Engine/Factories/ComponentsFactory.h"
+
+#include "../Components/TextComponent.h"
+#include "../Components/TextRenderComponent.h"
 
 using namespace game::components;
 using namespace engine::factories;
@@ -31,6 +33,9 @@ StartMenuScene::init()
 
 	std::shared_ptr<TextComponent> textComponent = std::static_pointer_cast<TextComponent>( ComponentFactory::instance().createObject("TextComponent"));
 	entity.get()->addComponent(textComponent);
+
+	std::shared_ptr<TextRenderComponent> textRender = std::static_pointer_cast<TextRenderComponent>(ComponentFactory::instance().createObject("TextRenderComponent"));
+	entity.get()->addComponent(textRender);
 }
 
 
