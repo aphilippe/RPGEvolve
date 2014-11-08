@@ -13,6 +13,7 @@
 
 #include "../Components/TextComponent.h"
 #include "../Components/TextRenderComponent.h"
+#include "../Components/Behaviours/ExitGameBehaviour.h"
 
 using namespace game::components;
 using namespace engine::factories;
@@ -33,10 +34,12 @@ StartMenuScene::init()
 
 	std::shared_ptr<TextComponent> textComponent = std::static_pointer_cast<TextComponent>( ComponentFactory::instance().createObject("TextComponent"));
 	entity.get()->addComponent(textComponent);
-	textComponent.get()->setText("plop");
 
 	std::shared_ptr<TextRenderComponent> textRender = std::static_pointer_cast<TextRenderComponent>(ComponentFactory::instance().createObject("TextRenderComponent"));
 	entity.get()->addComponent(textRender);
+
+	std::shared_ptr<ExitGameBehaviour> exitBehaviour = std::static_pointer_cast<ExitGameBehaviour>(ComponentFactory::instance().createObject("ExitGameBehaviour"));
+	entity.get()->addComponent(exitBehaviour);
 }
 
 

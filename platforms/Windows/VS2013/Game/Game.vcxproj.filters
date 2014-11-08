@@ -58,6 +58,9 @@
     <Filter Include="Fichiers sources\Game\Components">
       <UniqueIdentifier>{6ecf864a-6428-4682-b834-af0df154b7f6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Game\Components\Behaviours">
+      <UniqueIdentifier>{667b619e-b9a3-44f9-b97f-aebde5566ee1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\src\main.cpp">
@@ -108,6 +111,9 @@
     <ClCompile Include="..\..\..\..\src\Game\Components\TextRenderComponent.cpp">
       <Filter>Fichiers sources\Game\Components</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Game\Components\Behaviours\ExitGameBehaviour.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\src\Game\Scenes\StartMenuScene.h">
@@ -157,6 +163,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\src\Game\Components\TextRenderComponent.h">
       <Filter>Fichiers sources\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Game\Components\Behaviours\ExitGameBehaviour.h">
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

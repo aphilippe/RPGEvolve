@@ -43,11 +43,6 @@ Game::update()
         _behaviourSubsystem.update();
 
 		_renderSubsystem.render();
-
-        if (strcmp(_inputManager.getInput(), "exit") == 0) {
-            std::cout << "Bye" << std::endl;
-            this->stop();
-        }
     }
 
     this->end();

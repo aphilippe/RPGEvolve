@@ -9,6 +9,7 @@
 
 #include "Game/Components/TextComponent.h"
 #include "Game/Components/TextRenderComponent.h"
+#include "Game/Components/Behaviours/ExitGameBehaviour.h"
 
 
 using namespace engine::utils;
@@ -44,4 +45,5 @@ void initComponentsFactory()
 
 	factory.registerObject<game::components::TextComponent>("TextComponent");
 	factory.registerObject<game::components::TextRenderComponent>("TextRenderComponent");
+	factory.registerObject<game::components::ExitGameBehaviour>("ExitGameBehaviour");
 }
