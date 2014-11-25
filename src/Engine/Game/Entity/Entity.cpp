@@ -18,6 +18,7 @@ Entity::start()
 	{
 		it->second.get()->awake();
 	}
+	_active = true;
 }
 
 void
@@ -33,6 +34,29 @@ Entity::stop()
 	for (auto it = _components.begin(); it != _components.end(); it++)
 	{
 		it->second.get()->stop();
+	}
+	_active = false;
+}
+
+bool
+Entity::isActive()
+{
+	return _active;
+}
+
+void
+Entity::setActive(bool active)
+{
+	if (active != _active)
+	{
+		if (active)
+		{
+			this->start();
+		}
+		else
+		{
+			this->stop();
+		}
 	}
 }
 

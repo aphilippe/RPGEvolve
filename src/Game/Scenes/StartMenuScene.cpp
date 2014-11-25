@@ -29,17 +29,22 @@ StartMenuScene::init()
     printf("\nInit\n");
     Game* game = Game::current;
 
-    std::shared_ptr<Entity> entity = game->entityFactory().createEntity();
-    this->addEntity(entity);
+	std::shared_ptr<Entity> textEntity = game->entityFactory().createEntity();
+	this->addEntity(textEntity);
 
 	std::shared_ptr<TextComponent> textComponent = std::static_pointer_cast<TextComponent>( ComponentFactory::instance().createObject("TextComponent"));
-	entity.get()->addComponent(textComponent);
+	textEntity.get()->addComponent(textComponent);
+	textComponent.get()->setText("Text");
 
 	std::shared_ptr<TextRenderComponent> textRender = std::static_pointer_cast<TextRenderComponent>(ComponentFactory::instance().createObject("TextRenderComponent"));
-	entity.get()->addComponent(textRender);
+	textEntity.get()->addComponent(textRender);
+
+	std::shared_ptr<Entity> exitEntity = game->entityFactory().createEntity();
+	this->addEntity(exitEntity);
 
 	std::shared_ptr<ExitGameBehaviour> exitBehaviour = std::static_pointer_cast<ExitGameBehaviour>(ComponentFactory::instance().createObject("ExitGameBehaviour"));
-	entity.get()->addComponent(exitBehaviour);
+	exitEntity.get()->addComponent(exitBehaviour);
+	exitBehaviour.get()->otherEntity = textEntity;
 }
 
 
@@ -47,12 +52,10 @@ void
 StartMenuScene::start()
 {
     Scene::start();
-    printf("\nStart\n");
 }
 
 void
 StartMenuScene::stop()
 {
     Scene::stop();
-    printf("\nStop\n");
 }

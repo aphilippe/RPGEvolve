@@ -27,8 +27,12 @@ ExitGameBehaviour::update()
 	if (currentGame->inputManager().getInput() == "exit")
 	{
 		currentGame->stop();
-		std::shared_ptr<TextComponent> textComponent = std::static_pointer_cast<TextComponent>(this->getEntity()->getComponent("TextComponent"));
-		textComponent.get()->setText("Good bye");
+		//std::shared_ptr<TextComponent> textComponent = std::static_pointer_cast<TextComponent>(this->getEntity()->getComponent("TextComponent"));
+		//textComponent.get()->setText("Good bye");
+	}
+	else if (currentGame->inputManager().getInput() == "stop")
+	{
+		this->otherEntity.get()->setActive(false);
 	}
 }
 

@@ -112,7 +112,7 @@
       <Filter>Fichiers sources\Game\Components</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\src\Game\Components\Behaviours\ExitGameBehaviour.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers sources\Game\Components\Behaviours</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -165,7 +165,7 @@
       <Filter>Fichiers sources\Game\Components</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\src\Game\Components\Behaviours\ExitGameBehaviour.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers sources\Game\Components\Behaviours</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

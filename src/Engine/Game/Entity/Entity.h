@@ -17,11 +17,15 @@
 class Entity {
 private:
     std::map<std::string, std::shared_ptr<engine::game::component::Component>> _components;
+	bool _active;
 
 public:
     virtual void start();
 	virtual void init();
 	virtual void stop();
+
+	bool isActive();
+	void setActive(bool active);
 
 	void addComponent(std::shared_ptr<engine::game::component::Component> component);
 	void removeComponent(const std::string & componentId);

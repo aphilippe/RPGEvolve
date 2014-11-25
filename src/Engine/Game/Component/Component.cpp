@@ -21,3 +21,9 @@ Component::setEntity(Entity* entity)
 {
 	_entity = entity;
 }
+
+bool
+Component::isActive()
+{
+	return _active;
+}

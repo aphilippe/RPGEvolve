@@ -15,3 +15,10 @@ RenderSubSystem::registerComponent(engine::game::component::RenderComponent* com
 {
 	_components.push_back(component);
 }
+
+void
+RenderSubSystem::unregisterComponent(engine::game::component::RenderComponent* component)
+{
+	auto it = std::find(_components.begin(), _components.end(), component);
+	_components.erase(it);
+}

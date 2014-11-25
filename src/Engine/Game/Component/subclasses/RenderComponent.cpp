@@ -26,7 +26,7 @@ RenderComponent::awake()
 void
 RenderComponent::stop()
 {
-
+	Game::current->renderSubsystem().unregisterComponent(this);
 }
 
 std::string

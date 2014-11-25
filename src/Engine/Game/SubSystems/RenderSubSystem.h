@@ -13,6 +13,7 @@ namespace engine {
 			public:
 				void render();
 				void registerComponent(component::RenderComponent* component);
+				void unregisterComponent(component::RenderComponent* component);
 			};
 
 		}

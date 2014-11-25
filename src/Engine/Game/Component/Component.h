@@ -37,8 +37,11 @@ namespace engine {
 				Entity* getEntity();
 				void setEntity(Entity* entity);
 
+				bool isActive();
+
 			protected:
 				Entity* _entity;
+				bool _active;
             };
             
         }
