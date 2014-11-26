@@ -18,9 +18,3 @@ BehaviourSubSystem::update()
         (*it)->update();
     }
 }
-
-void
-BehaviourSubSystem::registerComponent(engine::game::component::BehaviourComponent* component)
-{
-    _components.push_back(component);
-}

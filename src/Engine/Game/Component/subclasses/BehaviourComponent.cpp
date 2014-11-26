@@ -23,5 +23,6 @@ BehaviourComponent::stop()
     if (this->isActive())
     {
         Component::stop();
+        Game::current->behaviourSubsystem().unregisterComponent(this);
     }
 }

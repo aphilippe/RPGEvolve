@@ -10,22 +10,17 @@
 #define __RPGEvolve__BehaviourSubSystem__
 
 #include <stdio.h>
-#include <vector>
 #include "../Component/subclasses/BehaviourComponent.h"
-#include <memory>
-#include "../Component/subclasses/BehaviourComponent.h"
+#include "AbstractSubSystem.h"
 
 namespace engine {
     namespace game {
         namespace subsystems {
             
-            class BehaviourSubSystem
+            class BehaviourSubSystem : public AbstractSubSystem<engine::game::component::BehaviourComponent>
             {
-            private:
-                std::vector<engine::game::component::BehaviourComponent*> _components;
             public:
                 void update();
-                void registerComponent(component::BehaviourComponent* component);
             };
             
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B73818E61A2604BF0018C8C9 /* AbstractSubSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B73818E41A2604BF0018C8C9 /* AbstractSubSystem.cpp */; };
 		B74847261A07AB80008A61C1 /* TextComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B74847241A07AB80008A61C1 /* TextComponent.cpp */; };
 		B74847291A07B0C8008A61C1 /* ComponentsFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B74847271A07B0C8008A61C1 /* ComponentsFactory.cpp */; };
 		B77E9E3A1A0A555400FFE7BB /* BehaviourSubSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B77E9E381A0A555400FFE7BB /* BehaviourSubSystem.cpp */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		B70CEE3D19EE964400021D2F /* GenericFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericFactory.h; sourceTree = "<group>"; };
+		B73818E41A2604BF0018C8C9 /* AbstractSubSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractSubSystem.cpp; sourceTree = "<group>"; };
+		B73818E51A2604BF0018C8C9 /* AbstractSubSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractSubSystem.h; sourceTree = "<group>"; };
 		B74847241A07AB80008A61C1 /* TextComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextComponent.cpp; sourceTree = "<group>"; };
 		B74847251A07AB80008A61C1 /* TextComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextComponent.h; sourceTree = "<group>"; };
 		B74847271A07B0C8008A61C1 /* ComponentsFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentsFactory.cpp; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 		B77E9E371A0A550400FFE7BB /* SubSystems */ = {
 			isa = PBXGroup;
 			children = (
+				B73818E41A2604BF0018C8C9 /* AbstractSubSystem.cpp */,
+				B73818E51A2604BF0018C8C9 /* AbstractSubSystem.h */,
 				B7F4FBF81A1389CB00992130 /* RenderSubSystem.cpp */,
 				B7F4FBF91A1389CB00992130 /* RenderSubSystem.h */,
 				B77E9E381A0A555400FFE7BB /* BehaviourSubSystem.cpp */,
@@ -335,6 +340,7 @@
 				B7A86DEC1992483D002F545A /* main.cpp in Sources */,
 				B7D2D57E19E40B2E008C2A4C /* Game.cpp in Sources */,
 				B7D2D57F19E40B32008C2A4C /* Entity.cpp in Sources */,
+				B73818E61A2604BF0018C8C9 /* AbstractSubSystem.cpp in Sources */,
 				B7D2D58319E40B3E008C2A4C /* SceneManager.cpp in Sources */,
 				B7D2D58019E40B35008C2A4C /* Component.cpp in Sources */,
 				B74847291A07B0C8008A61C1 /* ComponentsFactory.cpp in Sources */,
