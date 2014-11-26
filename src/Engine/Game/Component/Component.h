@@ -27,10 +27,10 @@ namespace engine {
                 virtual void init() = 0;
                 
                 // Call when entity is add in Scene.
-                virtual void awake() = 0;
+                virtual void awake();
                 
                 // Call when component is disabled
-                virtual void stop() = 0;
+                virtual void stop();
                 
                 virtual std::string componentId() = 0;
                 

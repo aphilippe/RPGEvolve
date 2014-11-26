@@ -27,3 +27,15 @@ Component::isActive()
 {
 	return _active;
 }
+
+void
+Component::awake()
+{
+    _active = true;
+}
+
+void
+Component::stop()
+{
+    _active = false;
+}

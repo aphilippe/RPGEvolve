@@ -16,7 +16,6 @@ namespace engine
 				~RenderComponent();
 
 				virtual void init();
-				virtual void awake();
 				virtual void stop();
 				virtual void render() = 0;
 

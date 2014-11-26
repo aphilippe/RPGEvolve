@@ -18,15 +18,13 @@ RenderComponent::init()
 }
 
 void
-RenderComponent::awake()
-{
-
-}
-
-void
 RenderComponent::stop()
 {
-	Game::current->renderSubsystem().unregisterComponent(this);
+    if (this->isActive())
+    {
+        Component::stop();
+        Game::current->renderSubsystem().unregisterComponent(this);
+    }
 }
 
 std::string

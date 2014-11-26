@@ -16,3 +16,12 @@ BehaviourComponent::init()
 {
     Game::current->behaviourSubsystem().registerComponent(this);
 }
+
+void
+BehaviourComponent::stop()
+{
+    if (this->isActive())
+    {
+        Component::stop();
+    }
+}

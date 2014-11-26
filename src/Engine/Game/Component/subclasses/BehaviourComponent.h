@@ -23,7 +23,7 @@ namespace engine
             public:
 
                 virtual void init();
-                
+                virtual void stop();
                 virtual void update() = 0;
                 virtual void lateUpdate() = 0;
             };
