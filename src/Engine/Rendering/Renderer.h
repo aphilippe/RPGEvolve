@@ -1,7 +1,10 @@
 #pragma once
 
 #include <list>
+#include <memory>
 #include "RenderOperation.h"
+#include "TargetRender.h"
+
 
 namespace engine
 {
@@ -17,6 +20,7 @@ namespace engine
 
 		protected:
 			std::list<const RenderOperation> _operations;
+			std::shared_ptr<engine::rendering::TargetRender> _targetRender;
 		};
 	}
 }

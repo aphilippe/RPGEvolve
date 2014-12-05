@@ -123,6 +123,9 @@
     <ClCompile Include="..\..\..\..\src\Engine\Rendering\RenderOperation.cpp">
       <Filter>Fichiers sources\Engine\Rendering</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Engine\Rendering\TargetRender.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\src\Game\Scenes\StartMenuScene.h">
@@ -181,6 +184,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\src\Engine\Rendering\RenderOperation.h">
       <Filter>Fichiers sources\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Engine\Rendering\TargetRender.h">
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
