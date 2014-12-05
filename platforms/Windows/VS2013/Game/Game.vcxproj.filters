@@ -61,6 +61,9 @@
     <Filter Include="Fichiers sources\Game\Components\Behaviours">
       <UniqueIdentifier>{667b619e-b9a3-44f9-b97f-aebde5566ee1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Engine\Rendering">
+      <UniqueIdentifier>{ea5c688f-4043-4d81-a169-0cf0ade56f72}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\src\main.cpp">
@@ -114,6 +117,12 @@
     <ClCompile Include="..\..\..\..\src\Game\Components\Behaviours\ExitGameBehaviour.cpp">
       <Filter>Fichiers sources\Game\Components\Behaviours</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Engine\Rendering\Renderer.cpp">
+      <Filter>Fichiers sources\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Engine\Rendering\RenderOperation.cpp">
+      <Filter>Fichiers sources\Engine\Rendering</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\src\Game\Scenes\StartMenuScene.h">
@@ -166,6 +175,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\src\Game\Components\Behaviours\ExitGameBehaviour.h">
       <Filter>Fichiers sources\Game\Components\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Engine\Rendering\Renderer.h">
+      <Filter>Fichiers sources\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Engine\Rendering\RenderOperation.h">
+      <Filter>Fichiers sources\Engine\Rendering</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

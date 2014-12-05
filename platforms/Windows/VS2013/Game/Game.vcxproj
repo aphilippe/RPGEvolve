@@ -90,6 +90,8 @@
     <ClCompile Include="..\..\..\..\src\Engine\Game\SubSystems\RenderSubSystem.cpp" />
     <ClCompile Include="..\..\..\..\src\Engine\Managers\InputManager\InputManager.cpp" />
     <ClCompile Include="..\..\..\..\src\Engine\Managers\SceneManager\SceneManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\Engine\Rendering\Renderer.cpp" />
+    <ClCompile Include="..\..\..\..\src\Engine\Rendering\RenderOperation.cpp" />
     <ClCompile Include="..\..\..\..\src\Game\Components\Behaviours\ExitGameBehaviour.cpp" />
     <ClCompile Include="..\..\..\..\src\Game\Components\TextComponent.cpp" />
     <ClCompile Include="..\..\..\..\src\Game\Components\TextRenderComponent.cpp" />
@@ -109,6 +111,8 @@
     <ClInclude Include="..\..\..\..\src\Engine\Game\SubSystems\RenderSubSystem.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Managers\InputManager\InputManager.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Managers\SceneManager\SceneManager.h" />
+    <ClInclude Include="..\..\..\..\src\Engine\Rendering\Renderer.h" />
+    <ClInclude Include="..\..\..\..\src\Engine\Rendering\RenderOperation.h" />
     <ClInclude Include="..\..\..\..\src\Engine\Utils\GenericFactory.h" />
     <ClInclude Include="..\..\..\..\src\Game\Components\Behaviours\ExitGameBehaviour.h" />
     <ClInclude Include="..\..\..\..\src\Game\Components\TextComponent.h" />
