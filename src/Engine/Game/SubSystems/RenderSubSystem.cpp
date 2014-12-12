@@ -8,10 +8,21 @@ RenderSubSystem::render()
 	{
 		(*it)->render();
 	}
+
+	for (auto it = _renderers.begin(); it != _renderers.end(); ++it)
+	{
+		it->second.get()->render();
+	}
 }
 
 void
-RenderSubSystem::attachRenderer(std::unique_ptr<engine::rendering::Renderer> renderer, const std::string & key)
+RenderSubSystem::attachRenderer(engine::rendering::Renderer* renderer, const std::string & key)
 {
-	_renderers[key] = std::move(renderer);
+	_renderers[key] = std::unique_ptr<engine::rendering::Renderer>(renderer);
+}
+
+engine::rendering::Renderer*
+RenderSubSystem::getRenderer(const std::string & key)
+{
+	return _renderers[key].get();
 }

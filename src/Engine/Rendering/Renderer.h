@@ -14,12 +14,12 @@ namespace engine
 		{
 		public:
 
-			void addOperation(const RenderOperation & operation);
+			void addOperation(RenderOperation* operation);
 
-			virtual void render() = 0;
+			virtual void render();
 
 		protected:
-			std::list<const RenderOperation> _operations;
+			std::list<RenderOperation*> _operations;
 			std::shared_ptr<engine::rendering::TargetRender> _targetRender;
 		};
 	}

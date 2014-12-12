@@ -15,6 +15,7 @@ void
 RenderComponent::init()
 {
 	Game::current->renderSubsystem().registerComponent(this);
+	this->registerRenderer();
 }
 
 void

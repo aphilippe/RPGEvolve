@@ -1,5 +1,5 @@
 #pragma once
-
+#include "../Game/Entity/Entity.h"
 namespace engine
 {
 	namespace rendering
@@ -9,6 +9,8 @@ namespace engine
 		public:
 			RenderOperation();
 			~RenderOperation();
+
+			virtual void fillWithEntity(Entity* entity) = 0;
 		};
 	}
 }

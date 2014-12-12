@@ -20,6 +20,10 @@ namespace engine
 				virtual void render() = 0;
 
 				std::string componentId();
+
+			protected:
+
+				virtual void registerRenderer() = 0;
 			};
 		}
 	}

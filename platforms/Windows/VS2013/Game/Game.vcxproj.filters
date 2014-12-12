@@ -64,6 +64,9 @@
     <Filter Include="Fichiers sources\Engine\Rendering">
       <UniqueIdentifier>{ea5c688f-4043-4d81-a169-0cf0ade56f72}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Game\Rendering">
+      <UniqueIdentifier>{23c0b37c-838f-487e-b206-4f27c836c4a7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\src\main.cpp">
@@ -124,7 +127,16 @@
       <Filter>Fichiers sources\Engine\Rendering</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\src\Engine\Rendering\TargetRender.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers sources\Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Game\Rendering\TextRenderer.cpp">
+      <Filter>Fichiers sources\Game\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Game\Rendering\TextRenderOperation.cpp">
+      <Filter>Fichiers sources\Game\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Game\Rendering\TextRenderTarget.cpp">
+      <Filter>Fichiers sources\Game\Rendering</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -186,7 +198,16 @@
       <Filter>Fichiers sources\Engine\Rendering</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\src\Engine\Rendering\TargetRender.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers sources\Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Game\Rendering\TextRenderer.h">
+      <Filter>Fichiers sources\Game\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Game\Rendering\TextRenderOperation.h">
+      <Filter>Fichiers sources\Game\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Game\Rendering\TextRenderTarget.h">
+      <Filter>Fichiers sources\Game\Rendering</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

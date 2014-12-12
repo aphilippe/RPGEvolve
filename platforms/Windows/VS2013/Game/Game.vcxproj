@@ -96,6 +96,9 @@
     <ClCompile Include="..\..\..\..\src\Game\Components\Behaviours\ExitGameBehaviour.cpp" />
     <ClCompile Include="..\..\..\..\src\Game\Components\TextComponent.cpp" />
     <ClCompile Include="..\..\..\..\src\Game\Components\TextRenderComponent.cpp" />
+    <ClCompile Include="..\..\..\..\src\Game\Rendering\TextRenderer.cpp" />
+    <ClCompile Include="..\..\..\..\src\Game\Rendering\TextRenderOperation.cpp" />
+    <ClCompile Include="..\..\..\..\src\Game\Rendering\TextRenderTarget.cpp" />
     <ClCompile Include="..\..\..\..\src\Game\Scenes\StartMenuScene.cpp" />
     <ClCompile Include="..\..\..\..\src\main.cpp" />
   </ItemGroup>
@@ -119,6 +122,9 @@
     <ClInclude Include="..\..\..\..\src\Game\Components\Behaviours\ExitGameBehaviour.h" />
     <ClInclude Include="..\..\..\..\src\Game\Components\TextComponent.h" />
     <ClInclude Include="..\..\..\..\src\Game\Components\TextRenderComponent.h" />
+    <ClInclude Include="..\..\..\..\src\Game\Rendering\TextRenderer.h" />
+    <ClInclude Include="..\..\..\..\src\Game\Rendering\TextRenderOperation.h" />
+    <ClInclude Include="..\..\..\..\src\Game\Rendering\TextRenderTarget.h" />
     <ClInclude Include="..\..\..\..\src\Game\Scenes\StartMenuScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

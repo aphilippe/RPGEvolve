@@ -13,7 +13,8 @@ namespace engine {
 			{
                 
 			public:
-				void attachRenderer(std::unique_ptr<engine::rendering::Renderer> renderer, const std::string & key);
+				void attachRenderer(engine::rendering::Renderer* renderer, const std::string & key);
+				engine::rendering::Renderer* getRenderer(const std::string & key);
 				void render();
 
 			protected:
