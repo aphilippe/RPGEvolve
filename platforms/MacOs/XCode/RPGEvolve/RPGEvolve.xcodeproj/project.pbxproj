@@ -25,6 +25,12 @@
 		B7F4FBFA1A1389CB00992130 /* RenderSubSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FBF81A1389CB00992130 /* RenderSubSystem.cpp */; };
 		B7F4FC001A1389FE00992130 /* TextRenderComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FBFE1A1389FE00992130 /* TextRenderComponent.cpp */; };
 		B7F4FC011A138B4700992130 /* ExitGameBehaviour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4FBFC1A1389F400992130 /* ExitGameBehaviour.cpp */; };
+		E6B810951A9B5DF300969EB2 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6B8108F1A9B5DF300969EB2 /* Renderer.cpp */; };
+		E6B810961A9B5DF300969EB2 /* RenderOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6B810911A9B5DF300969EB2 /* RenderOperation.cpp */; };
+		E6B810971A9B5DF300969EB2 /* TargetRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6B810931A9B5DF300969EB2 /* TargetRender.cpp */; };
+		E6B8109F1A9B5E6F00969EB2 /* TextRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6B810991A9B5E6F00969EB2 /* TextRenderer.cpp */; };
+		E6B810A01A9B5E6F00969EB2 /* TextRenderOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6B8109B1A9B5E6F00969EB2 /* TextRenderOperation.cpp */; };
+		E6B810A11A9B5E6F00969EB2 /* TextRenderTarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6B8109D1A9B5E6F00969EB2 /* TextRenderTarget.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +83,18 @@
 		B7F4FBFD1A1389F400992130 /* ExitGameBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExitGameBehaviour.h; sourceTree = "<group>"; };
 		B7F4FBFE1A1389FE00992130 /* TextRenderComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextRenderComponent.cpp; sourceTree = "<group>"; };
 		B7F4FBFF1A1389FE00992130 /* TextRenderComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextRenderComponent.h; sourceTree = "<group>"; };
+		E6B8108F1A9B5DF300969EB2 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		E6B810901A9B5DF300969EB2 /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		E6B810911A9B5DF300969EB2 /* RenderOperation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderOperation.cpp; sourceTree = "<group>"; };
+		E6B810921A9B5DF300969EB2 /* RenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderOperation.h; sourceTree = "<group>"; };
+		E6B810931A9B5DF300969EB2 /* TargetRender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TargetRender.cpp; sourceTree = "<group>"; };
+		E6B810941A9B5DF300969EB2 /* TargetRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetRender.h; sourceTree = "<group>"; };
+		E6B810991A9B5E6F00969EB2 /* TextRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextRenderer.cpp; sourceTree = "<group>"; };
+		E6B8109A1A9B5E6F00969EB2 /* TextRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextRenderer.h; sourceTree = "<group>"; };
+		E6B8109B1A9B5E6F00969EB2 /* TextRenderOperation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextRenderOperation.cpp; sourceTree = "<group>"; };
+		E6B8109C1A9B5E6F00969EB2 /* TextRenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextRenderOperation.h; sourceTree = "<group>"; };
+		E6B8109D1A9B5E6F00969EB2 /* TextRenderTarget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextRenderTarget.cpp; sourceTree = "<group>"; };
+		E6B8109E1A9B5E6F00969EB2 /* TextRenderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextRenderTarget.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,9 +194,10 @@
 			isa = PBXGroup;
 			children = (
 				B79D0B3F19F7CD440016FF54 /* Factories */,
-				B70CEE3C19EE964400021D2F /* Utils */,
 				B7D2D56A19E40AA9008C2A4C /* Game */,
 				B7D2D57619E40AA9008C2A4C /* Managers */,
+				E6B8108E1A9B5DF300969EB2 /* Rendering */,
+				B70CEE3C19EE964400021D2F /* Utils */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -186,8 +205,8 @@
 		B7D2D56A19E40AA9008C2A4C /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				B77E9E371A0A550400FFE7BB /* SubSystems */,
 				B7D2D56B19E40AA9008C2A4C /* Component */,
+				B77E9E371A0A550400FFE7BB /* SubSystems */,
 				B7D2D56E19E40AA9008C2A4C /* Entity */,
 				B7D2D57319E40AA9008C2A4C /* Scene */,
 				B7D2D57119E40AA9008C2A4C /* Game.cpp */,
@@ -254,6 +273,7 @@
 		B7D2D58419E40BC5008C2A4C /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				E6B810981A9B5E6F00969EB2 /* Rendering */,
 				B74847231A07A919008A61C1 /* Components */,
 				B7D2D58519E40BD4008C2A4C /* Scenes */,
 			);
@@ -276,6 +296,32 @@
 				B7F4FBFD1A1389F400992130 /* ExitGameBehaviour.h */,
 			);
 			path = Behaviours;
+			sourceTree = "<group>";
+		};
+		E6B8108E1A9B5DF300969EB2 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				E6B8108F1A9B5DF300969EB2 /* Renderer.cpp */,
+				E6B810901A9B5DF300969EB2 /* Renderer.h */,
+				E6B810911A9B5DF300969EB2 /* RenderOperation.cpp */,
+				E6B810921A9B5DF300969EB2 /* RenderOperation.h */,
+				E6B810931A9B5DF300969EB2 /* TargetRender.cpp */,
+				E6B810941A9B5DF300969EB2 /* TargetRender.h */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		E6B810981A9B5E6F00969EB2 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				E6B810991A9B5E6F00969EB2 /* TextRenderer.cpp */,
+				E6B8109A1A9B5E6F00969EB2 /* TextRenderer.h */,
+				E6B8109B1A9B5E6F00969EB2 /* TextRenderOperation.cpp */,
+				E6B8109C1A9B5E6F00969EB2 /* TextRenderOperation.h */,
+				E6B8109D1A9B5E6F00969EB2 /* TextRenderTarget.cpp */,
+				E6B8109E1A9B5E6F00969EB2 /* TextRenderTarget.h */,
+			);
+			path = Rendering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,18 +376,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7F4FC001A1389FE00992130 /* TextRenderComponent.cpp in Sources */,
+				E6B810A11A9B5E6F00969EB2 /* TextRenderTarget.cpp in Sources */,
 				B79D0B4219F7CD8A0016FF54 /* EntityFactory.cpp in Sources */,
+				E6B810971A9B5DF300969EB2 /* TargetRender.cpp in Sources */,
 				B77E9E3E1A0A56D200FFE7BB /* BehaviourComponent.cpp in Sources */,
 				B7D2D58219E40B3C008C2A4C /* InputManager.cpp in Sources */,
 				B74847261A07AB80008A61C1 /* TextComponent.cpp in Sources */,
+				E6B810961A9B5DF300969EB2 /* RenderOperation.cpp in Sources */,
 				B7F4FBFA1A1389CB00992130 /* RenderSubSystem.cpp in Sources */,
+				E6B810A01A9B5E6F00969EB2 /* TextRenderOperation.cpp in Sources */,
 				B7F4FC011A138B4700992130 /* ExitGameBehaviour.cpp in Sources */,
 				B7D2D58119E40B38008C2A4C /* Scene.cpp in Sources */,
 				B7A86DEC1992483D002F545A /* main.cpp in Sources */,
+				E6B8109F1A9B5E6F00969EB2 /* TextRenderer.cpp in Sources */,
 				B7D2D57E19E40B2E008C2A4C /* Game.cpp in Sources */,
 				B7D2D57F19E40B32008C2A4C /* Entity.cpp in Sources */,
 				B73818E61A2604BF0018C8C9 /* AbstractSubSystem.cpp in Sources */,
 				B7D2D58319E40B3E008C2A4C /* SceneManager.cpp in Sources */,
+				E6B810951A9B5DF300969EB2 /* Renderer.cpp in Sources */,
 				B7D2D58019E40B35008C2A4C /* Component.cpp in Sources */,
 				B74847291A07B0C8008A61C1 /* ComponentsFactory.cpp in Sources */,
 				B7F4FBF71A1389B800992130 /* RenderComponent.cpp in Sources */,
